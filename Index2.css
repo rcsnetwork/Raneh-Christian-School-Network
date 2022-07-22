@@ -830,7 +830,7 @@ to{
 
 
 /* Media Queries for smaller devices width very small screen */
-@media screen and (min-width:320px) and (max-width:399px){
+@media screen and (min-width:240px) and (max-width:399px){
 /* the last two images in the about page */
 .last-images{
     display:flex;
