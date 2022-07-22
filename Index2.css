@@ -1,0 +1,2553 @@
+/* THESE CODES ARE FOR THE INDEX PAGE FOR THE WEBSITE. */
+
+/* codes for styling the whole body */
+*{
+    margin:0;
+    padding:0;
+} 
+
+
+
+/* styling for the logos */
+.logo-area{
+margin-top:-20px;
+background-color:white;
+}
+
+
+/* the two images that stand over the Navbar */
+#logo-web{
+    width:120px;
+    height:120px;
+}
+
+
+/* The text b/w the logos/crown images */
+.logo-area span{
+    font-size:46px;
+    color:black;
+}
+/* slider for the homepage */
+.background{
+    overflow:hidden;
+    margin-bottom:6rem;
+}
+
+.background figure{
+    position:relative;
+    margin:0;
+    left:0;
+    width:500%;
+
+    animation: slider 20s infinite;
+}
+
+
+
+.background figure img{
+    float:left;
+    width:20%;
+    height:600px;
+}
+
+/* This is the code for the image slider */
+@keyframes slider{
+    0%{left:0%;}
+    20%{left:0;}
+    25%{left:-100%;}
+    45%{left:-100%;}
+    50%{left:-200%;}
+    70%{left:-200%;}
+    75%{left:-300%;}
+    90%{left:-300%;}
+    95%{left:-400%;}
+    100%{left:-400%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The banner codes */
+.banner{
+    height:8rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background:cyan;
+}
+
+/* the text in the banner */
+.banner h1{
+  font-size:50px;
+  font-family:lucida;
+  text-align:center;
+  color:black;
+  animation: websitename 5s;
+}
+
+
+/* the class that holds all of the boxes that are displayed in flex or the showcase section */
+.box-container{
+overflow:hidden;
+margin:1.5rem;
+padding:1rem;
+display:flex;
+background-color:white;
+color:black;
+border-radius:3rem;
+justify-content: space-evenly;
+}
+
+/* The box in which you have the first group of images */
+.box{
+    margin-bottom:3rem;
+}
+
+/* the style for the names of each of th showcase */
+.box-container .box .b-head center h2{
+    padding:0 4rem;
+    font-size:20px;
+    border-radius:1.5rem;
+}
+
+
+
+/* the box that holds the images */
+.b-body{
+    overflow:hidden;
+    position:relative;
+}
+/* first group of images  */
+.b-body img{
+    width:17rem;
+    height:16rem;
+    border-radius:15px;
+}
+
+/* buttons below the images */
+.b-end button{
+    margin-left:100px;
+    height:2.4rem;
+    padding:0 8px;
+    box-shadow: 0 0 15px orangered;
+    border-radius:50px;
+    background: linear-gradient(60deg,pink,orange, lime);
+    margin-bottom:24px;
+}
+
+/* links in the buttons style */
+.b-end button a{
+    font-size:18px;
+    text-decoration:none;
+    font-weight:bold;
+    color:black;
+}
+
+/* Codes for the little About information in the Index Page */
+.informations{
+    background:tomato;
+    color:white;
+    padding:2rem;
+    margin:4rem;
+    border-radius:18px;
+    box-shadow:0 0 14px orangered;
+
+}
+
+/* Stylings for the heading text and the paragraph in the Index page */
+.informations h1, .informations p{
+    color:white;
+}
+
+.informations p{
+    font-size:23px;
+    margin:20px;
+}
+
+
+/* testimonials section this appers in the Index page */
+/* displaying the second set of images in rows */
+.test-container{
+    display:flex;
+    margin:2rem 0rem;
+    justify-content:space-evenly;
+}
+
+/* resizing the images of people's testimonies*/
+.imgs{
+width:12rem;
+height:11rem;
+padding:0.3rem 0rem;
+border-radius:20px;
+box-shadow: 0 0 6px tomato;
+opacity: 0.4;
+}
+
+
+/* hover effect for the images */
+.imgs:hover{
+   transition:all 0.2s ease-in;
+    box-shadow: 0 0 11px cyan;
+    -webkit-box-reflect: below 0.1px linear-gradient(transparent, rgba(255,255,255,0.2 ));
+    opacity: 1;
+}
+
+
+
+
+/* text below each of the testimonies */
+figure figcaption{
+    text-align:center;
+    height:3rem;
+    margin:5rem;
+    font-size:20px;
+    margin:0rem 1rem 0rem;
+}
+
+/* THE FOOTER SECTION */
+.footer-container{
+    display:flex;
+    padding:10px 0px;
+    margin: 2rem 0rem;
+    background:rgba(143, 121, 139, 0.815);
+    justify-content: space-evenly;
+}
+
+
+/* codes for the boxes in the footer */
+.footer-container .f-boxes{
+    margin:1rem;
+    width:17rem;
+    height:26rem;
+    color:rgb(194, 207, 173);
+    font-weight:bold;
+    border-radius:38px;
+    margin-bottom:2rem;
+    box-shadow:0 1px 10px cyan;
+    background:rgb(148, 84, 137);
+}
+
+/* Codes to arrange all elements in the Link's box */
+.footer-container .f-boxes img{
+    width:40px;
+    height:40px;
+    border-radius:60px;
+}
+
+
+.copyright {
+    background:linear-gradient(45deg,orange, blueviolet,deeppink);
+padding:0.3rem;
+color:rgb(255, 255, 250);
+font-weight:900;
+font-size:16px;
+}
+
+
+
+
+/* Works along with the JavaScript for animation */
+.reveal{
+    transform:translateY(150px);
+    position:relative;
+    opacity:0;
+    transition:all 2s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0px);
+}
+
+/* CODES FOR THE ENTIRE ABOUT PAGE */
+
+/*  */
+
+
+
+
+
+
+
+/* setting the image team's last image in the center but bottom */
+#set-bottom{
+    width:12rem;
+    height:13rem;
+    border-radius:40px;
+}
+
+figure figcaption{
+text-align:center;
+    height:15rem;
+}
+
+/* giving margin at the bottom of the last person in the About page */
+.l-margin{
+    margin-bottom:3rem;
+    font-weight:bold;
+    font-size:23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CODES FOR THE PRODUCTS PAGE*/
+/* Stylings for the button in that links to purchase section below products */
+.b-container {
+    font-size:16px;
+    background:linear-gradient(45deg,orange, red,green);
+    padding:5px 6px;
+    border-radius:12px;
+
+
+}
+
+
+
+/* Links within the buttons */
+.b-container .purchase{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    font-family:san, serif, arial;
+    margin-bottom:10px;
+
+}
+
+/* Stylings for the GALLERY PAGE */
+/* the code for the video on the gallery page  */
+/* this beautifies the buttons that control the video player */
+.v-buttons{
+padding:6px 9px;
+font-size:14px;
+border:2px solid cyan;
+border-radius: 10px;
+box-shadow: 0 0 6px orange;
+font-weight:bold;
+outline:none;
+font-family:'Courier New', Courier, monospace;
+
+}
+
+/* the code to remove lines from around the video */
+#myVideo{
+outline:none;
+border:2px solid cyan;
+border-radius: 40px;
+margin-top:1rem;
+inset: white;
+margin-bottom:1rem;
+
+box-shadow: 0 0 16px orangered;
+border-right:12px solid black;
+border-left:12px solid black;
+
+}
+
+
+
+
+/* universal styling for all buttons */
+buttons{
+    outline:none;
+}
+
+
+
+/* the styling for the random quotes  */
+#quotes{
+height:auto;
+width:14rem;
+box-shadow: 0 0 16px black;
+background-color:white; 
+color:black;
+text-align:center;
+padding:1rem;
+text-align:center;
+border-radius:20px;
+margin-bottom:0.6rem;
+overflow:hidden;
+
+
+
+}
+
+
+
+
+/* the buttons for the random quotes */
+#quote{
+    outline:none;
+    padding:8px;
+    border-radius: 8px;
+    font-size:18px;
+    box-shadow:0 0 14px;
+    background-color:indigo;
+    color:white;
+    cursor:pointer;
+}
+
+
+
+
+
+/* the text arrow direction to dropdown contents in the gallery page */
+summary{
+    outline:none;
+    margin-left:14px;
+}
+
+summary span{
+    font-size:22px;
+}
+
+
+/*  THE ENTIRE CONTACT FORM */
+/* styling for the words on top of the contact form */
+/* displaying the contact form and image with address in flex */
+.f-holder{
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom:4rem;
+}
+
+
+
+
+
+/* horizontal line under the words on top of the contact form */
+.top-worsds .hr{
+width:300px;
+}
+
+/* image on the Contact Form */
+center .c-image{
+    width:25rem;
+    height:25rem;
+    border-radius:18px;
+}
+
+
+/* list below the image in the contact page */
+ul{
+    font-size:23px;
+    list-style-type:none;
+}
+
+/* the body of the form */
+.c-form{
+    height:auto;
+    width:400px;
+    padding:10px 0px;
+    margin:8px;
+    border-radius:16px;
+    box-shadow:0 0 17px black;
+    border-top:6px solid cyan;
+    border-bottom:6px solid cyan;
+background-color:rgb(124, 155, 124);
+}
+
+/* hover effect for the form */
+.c-form:hover{
+    transition:all 0.4s ease-in;
+    background-color:rgb(54, 59, 78);
+    color:white;
+    border-radius:18px;
+    box-shadow:0 0 17px deeppink;
+    border-top:6px solid pink;
+    border-bottom:6px solid pink;
+}
+
+/* stylings for all the h3s in the form */
+.all-h3s{
+    margin:4px;
+}
+
+
+/* The first in the form */
+form .f-header{
+    margin-top:25px;
+}
+
+
+
+/* Stylings for the text ares in the contact form */
+.text-areas{
+    height:22px;
+    width:300px;
+    font-size:16px;
+    padding:5px;
+    text-align:center;
+    border-radius:12px;
+}
+
+/* The Select area */
+select{
+    height:28px;
+    width:300px;
+}
+
+
+/* The area to write messages */
+.messages{
+    height:150px;
+    width:300px;
+    border-radius:15px;
+    font-size:14px;
+    font-weight:bold;
+    padding:3px;
+    text-align:center;
+}
+
+
+
+
+/* The submit and reset buttons in the contact form */
+/* styles for the buttons */
+.f-buttons{
+    font-size:18px;
+    border-radius:13px;
+    padding:5px;
+    color:white;
+    background:linear-gradient(45deg, blueviolet, deeppink);
+    box-shadow:0 0 5px cyan;
+
+}
+
+
+/* The link in the second button */
+.f-buttons .b-links{
+    text-decoration:none;
+    color:black;
+}
+
+/* hover effect for the buttons in the contact form */
+.f-buttons:hover{
+    color:black;
+box-shadow: 0 0 9px black;
+background:linear-gradient(270deg, orangered, white, cyan);
+transition: all 1s ease;
+}
+
+
+
+
+
+
+
+/* CODES FOR THE PAYMENT AND CALCULATOR SECTION IN THE PRODUCT PAGE */
+/* stylings  */
+.p-cal{
+    margin-top:2rem;
+    justify-content: space-evenly;
+    display:flex;
+    overflow:hidden;
+}
+
+
+
+
+
+
+
+
+/* The Purchase form to buy products */
+#products{
+background-color:orangered;
+width:23rem;
+height:27rem;
+padding:2rem;
+border-top-right-radius:22px;
+border-bottom-left-radius:22px;
+margin-top:2rem;
+box-shadow:0 0 18px tomato;
+}
+
+/* the text areas to be filled out for the payment form  */
+.pay-areas{
+    height:26px;
+    width:16rem;
+    border-radius:9px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* codes for the button at the buttom of the payment form */
+.p-button{
+    padding:8px;
+    border-radius: 8px;
+    font-size:18px;
+    box-shadow:0 0 14px;
+    background-color:indigo;
+    color:white;
+    cursor:pointer;
+}
+
+
+
+
+
+/* /* Stylings for the calculator in the PRODUCT PAGE */
+/* The whole body for the calculator */
+#cal-body{
+    background:rgb(130, 28, 177);
+    color:white;
+    width:18rem;
+    height:29rem;
+    margin-top:2rem;
+    padding: 1rem 0rem;
+    border-radius:20px;
+    margin-bottom:2rem;
+    box-shadow:0 0 13px white;
+}
+
+/* codes for the buttons */
+input[type="button"]{
+    font-size:20px;
+    width:50px;
+    padding:4px;
+    border-radius:10px;
+    color:orange;
+    font-weight:bold;
+    cursor:arrow;
+}
+
+/* arrangement for the power buttons on the left */
+#first{
+    margin-left:6.9rem;
+    }
+
+    #second{
+        margin-left:0rem;
+    }
+
+
+
+
+
+
+/* arrange the clock on the calculator */
+#clock{
+
+    font-size:23px;
+    font-weight:bold;
+    color:white;
+    margin-bottom:3rem;
+
+
+}
+
+/* hover effect for the calculator */
+#cal-body:hover{
+    background: linear-gradient(90deg,  blue, black,);
+    transition:all 2s ease-in;
+    opacity:0.8;
+
+}
+
+
+
+/* codes for the display area in the calculator */
+#display{
+height:1.8rem;
+width:12rem;
+box-shadow:0 0 14px white;
+border-radius:8px;
+text-align:right;
+font-size:26px;
+padding:0.3rem 1.2rem;
+}
+
+/* This code works for placing margins to separate images and their names from the others */
+.text-container{
+    margin:3rem 0rem;
+}
+
+
+  /* Animation for the Webpage's title*/
+  @keyframes websitename{
+
+    from{
+    color:yellow;
+    opacity:0.9;
+    font-size:2px;
+    margin-bottom:2px;
+  }
+
+
+to{
+    font-size:40px;
+  color:red;
+  margin-top:16px;
+  opacity:0.7;
+  transition:all 1s ease;
+  text-shadow:2px 2px black;
+}
+
+
+
+
+}
+
+/* the container of the arrow to take you back to the top of the page */
+.up{
+   height:25px;
+    background-color:white;
+    width:2rem;
+    float:right;
+   margin-top:-2.6rem;
+   margin-right:7rem;
+  
+
+   text-align:center;
+   border-radius:150px;
+   border:3px solid tomato;
+   box-shadow:0 0  13px black;
+   animation: go-home 2s infinite;
+
+} 
+
+
+
+/* The animation for the arrow to go up  */
+@keyframes go-home{
+    from {
+   margin-top:-3.8rem;
+  
+    }
+
+    to{
+        margin-top:-2.6rem;
+    }
+
+
+    
+}
+
+
+/* the  main arrow */
+.up a{
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    color:orangered;
+    padding:8px;
+}
+
+/* the last two images in the about page */
+.last-images{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+
+
+
+
+
+/* styling to fix the margin for the last team's member image */
+#diamond{
+    margin-top:-10rem;
+    margin-left:1.5rem;
+    margin-bottom:4rem;
+}
+
+.sam{
+    margin-top:-10rem;
+    margin-left:1.5rem;
+    margin-bottom:4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for smaller devices width very small screen */
+@media screen and (min-width:320px) and (max-width:399px){
+/* the last two images in the about page */
+.last-images{
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction:column;
+}
+
+
+
+
+
+    /* the information about the website in the about page */
+    .web-info h2{
+        text-align:center;
+        margin-bottom:10px;
+    }
+
+    
+    /* the logo images */
+    #logo-web{
+width:20px;
+
+
+    }
+
+
+/* codes to arrange the height of the slider on a small phone */
+
+    .background{
+        overflow:hidden;
+        margin-bottom:6rem;
+    }
+    
+    /* the figure that contains the images */
+    .background figure{
+        position:relative;
+        margin:0;
+        left:0;
+        width:500%;
+    
+        animation: slider 20s infinite;
+    }
+    
+    
+    /* the animation area for the image slider in the various pages*/
+    .background figure img{
+        float:left;
+        width:20%;
+        height:300px;
+        opacity:0.8;
+    }
+
+
+
+/* WORKS ON SMALLER DEVICES */
+/* the class that holds all of the boxes that are displayed in flex or the showcase section */
+.box-container{
+    overflow:hidden;
+    margin:1.5rem;
+    padding:1rem;
+    display:flex;
+
+    color:black;
+    border-radius:3rem;
+    justify-content: space-evenly;
+    }
+    
+    /* The box in which you have the first group of images */
+    .box{
+        margin-bottom:3rem;
+    }
+    
+    /* the style for the names of each of th showcase */
+    .box-container .box .b-head center h2{
+        padding:0 4rem;
+        font-size:20px;
+        border-radius:1.5rem;
+    }
+    
+
+
+    
+    /* testimonials section */
+    /* displaying the second set of images in rows */
+    .test-container{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        margin-top:1rem;
+        
+    
+    }
+    
+    /* resizing the images */
+    figure .imgs{
+    width:8rem;
+    height:10rem;
+    margin:auto;
+    border-radius:10px;
+    }
+
+/* Hover Effect */
+    .imgs:hover{
+        transition:all 0.2s ease-in;
+         box-shadow: 0 0 11px cyan;
+     
+     }
+    
+    /* text below each of the testimonies */
+    figure figcaption{
+        text-align:center;
+        height:auto;
+        font-size:21px;
+        margin:1rem 4rem 2rem;
+    
+    
+    }
+
+
+
+/* setting the text below the last image */
+h3.l-margin{
+    font-size:19.89px;
+}
+
+
+
+    /* setting the margin to fit with the top images in tablet mode  */
+/* the last image */
+#set-bottom{
+    width:8rem;
+    height:11rem;
+    margin:auto;
+    border-radius:10px;
+    }
+
+
+
+    /* the text under the last image */
+    #set-bottom figcaption{
+    text-align:center;
+    height:auto;
+    margin:0.5rem 10rem 6rem;
+        }
+
+
+    
+    /* container that holds the h2 in for advertisment for the products */
+    .b-head{
+    
+    margin-top:4rem;
+    
+    }
+    
+    /* The h2 with in the container */
+    .b-head h2{
+        font-size:11px;
+        width:auto;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+    
+    }
+    
+    
+    /* THE FOOTER SECTION */
+    .footer-container{
+        display:flex;
+        flex-direction: column;
+        padding:10px 0px;
+        background:rgba(143, 121, 139, 0.815);
+        justify-content: space-evenly;
+    }
+    
+    
+    /* codes for the boxes in the footer */
+    .footer-container .f-boxes{
+        margin:auto;
+        margin-bottom:3rem;
+        width:8rem;
+        height:26rem;
+        padding:0 30px;
+        color:white;
+        font-weight:bold;
+        box-shadow:0 1px 10px cyan;
+        background:#f3d;
+    }
+    
+    /* Codes to arrange all elements in the Link's box */
+    .footer-container .f-boxes img{
+        width:30px;
+        height:30px;
+        border-radius:60px;
+    }
+    
+
+/* THE VIDEO PLAYER */
+    /* this beautifies the buttons that control the video player */
+.v-buttons{
+    padding:1px;
+    font-size:14px;
+    font-weight:bold;
+    font-family:'Courier New', Courier, monospace;
+    transition:all 2s ease;
+    }
+    
+    /* the code to remove lines from around the video */
+    #myVideo{
+    outline:none;
+    width:210px;
+    height:auto;
+    }
+    
+
+
+
+
+
+    /* TOP OF THE PAGE */
+    /* The Logo Areas */
+        .logo-area{
+            margin-top:-10px;
+            }
+    
+            /* the images in the at the top of the page */
+            #logo-web{
+                width:30px;
+                height:30px;
+            }
+    /* The name of the Website */
+            .logo-area span{
+                font-size:13px;
+            }
+    
+
+
+
+    /* The Navbar  */
+    .navbar{
+        overflow:hidden;
+        padding:1px;
+        background:linear-gradient(45deg,orange, blueviolet,deeppink);
+    }
+
+
+
+    /* the links in the Navbar */
+        .navbar .links{
+            display:inline;
+            text-transform:uppercase;
+            font-size:10px;
+            color:white;
+            text-decoration:none;
+            border-radius:50%;
+            padding: 8px;
+        }
+    
+        /* Positioning the first link on the small device (s) */
+        .navbar .links:nth-child(1){
+            margin-left:2.4px;
+        }
+    
+
+        /* the text in the banner */
+        .banner h1{
+            font-size:18px;
+            font-family:lucida;
+            font-weight:solid thick bold;
+          }
+    
+    
+
+    /* the box that holds the images at the showcase */
+          .box-container{
+          
+          overflow:hidden;
+          display:flex;
+          flex-direction:column;
+          justify-content: space-evenly;
+          }
+
+    /* the various boxes that have the name of the showcases */
+          .box{
+              width:9rem;
+              background-color:white;
+              margin:auto;
+              margin-bottom:2rem;
+              text-align:center;
+          }
+    
+          /* The heading text in the showcase */
+          .b-head h2{
+            text-align:center;
+            font-size:13px;
+            margin-left:-22px;
+          }
+    
+        
+          /* The body that holds the images display in column */
+          .b-body{
+              overflow:hidden;
+              position:relative;
+          }
+    
+
+          /* the images that are contained in the body of the container */
+          .b-body img{
+              width:9rem;
+              height:10rem;
+          }
+    
+
+
+/* The div that holds the buttons with links in them */
+          .b-end button{
+            margin-left:auto;
+           
+        }
+
+        /* the links in the buttons */
+        .b-end button .blinks{
+            font-size:13px;
+            font-weight:bold;
+        }
+
+
+    
+         /* testimonials section */
+         .web-info h2{
+            text-align:center;
+      }
+    
+    
+    
+    .footer-container{
+        display:flex;
+        flex-direction:column;
+        background:rgba(253, 253, 253, 0.959);
+        justify-content: space-evenly;
+    }
+
+
+
+    /* changing styles for the boxes in the footer */
+    .f-boxes{
+        border-radius:14px;
+        background:aqua;
+    }
+    
+    
+    /*  THE ENTIRE CONTACT FORM */
+    /* styling for the words on top of the contact form */
+    /* displaying the contact form and image with address in flex */
+    .f-holder{
+        display:flex;
+        justify-content:space-evenly;
+        margin-bottom:4rem;
+        flex-direction:column;
+    
+    }
+    
+    /* the boxes displayed in flex */
+    .f-holder .f-contents{
+        margin-bottom:4rem;
+    }
+    
+    
+    /* the two boxes displayed in flex now turned to column */
+    
+    
+    
+    /* horizontal line under the words on top of the contact form */
+    .top-words{
+    width:300px;
+    }
+    
+    /* image on the Contact Form */
+    center .c-image{
+        width:18rem;
+        height:16rem;
+        border-radius:13px;
+    }
+    
+    
+    /* list below the image in the contact page */
+    ul{
+        list-style-type:none;
+        font-size:23px;
+    }
+    
+    /* the body of the form */
+    .c-form{
+        height:auto;
+        width:19rem;
+        padding:10px 0px;
+        margin-bottom:4rem;;
+        border-radius:16px;
+        box-shadow:0 0 17px black;
+        border-top:6px solid cyan;
+        border-bottom:6px solid cyan;
+    background-color:rgb(197, 89, 27);
+    }
+    
+    /* hover effect for the form */
+    .c-form:hover{
+        transition:all 0.4s ease-in;
+        background-color:rgb(54, 59, 78);
+        color:white;
+        border-radius:18px;
+        box-shadow:0 0 17px rgb(133, 86, 111);
+        border-top:6px solid pink;
+        border-bottom:6px solid pink;
+    }
+    
+    /* stylings for all the h3s in the form */
+    .all-h3s{
+        margin:4px;
+    }
+    
+    
+    /* The first in the form */
+    form .f-header{
+        margin-top:25px;
+    }
+    
+    
+    
+    /* Stylings for the text ares in the contact form */
+    .text-areas{
+        height:28px;
+        width:300px;
+        font-size:16px;
+        padding:10px 5px;
+        text-align:center;
+        border-radius:12px;
+    }
+    
+    /* The Select area */
+    select{
+        height:28px;
+        width:200px;
+    }
+    
+    
+    /* The area to write messages */
+    .messages{
+        height:120px;
+        width:300px;
+        border-radius:5px;
+        font-size:14px;
+        font-weight:bold;
+        padding:6px;
+        text-align:center;
+    }
+    
+    
+    
+    
+    
+    
+    /* CODES FOR THE PAYMENT AND CALCULATOR SECTION IN THE PRODUCT PAGE */
+    /* stylings  */
+    .p-cal{
+        margin-top:2rem;
+        justify-content: space-evenly;
+        display:flex;
+        overflow:hidden;
+        flex-direction:column;
+    }
+    
+    
+    
+    /* The Purchase form to buy products */
+    #products{
+    background-color:orangered;
+    width:8rem;
+    font-size:11px;
+    height:auto;
+    padding:2rem;
+    border-radius:22px;
+    margin-top:2rem;
+    }
+    
+    /* the h1 in the payment form */
+    #products h1{
+        font-size:29px;
+    }
+    
+    /* the various areas to fill in the form for payment */
+    .pay-areas{
+        height:20px;
+        border-radius:6px;
+        width:8rem;
+    }
+    
+    
+    
+    /* /* Stylings for the calculator in the PRODUCT PAGE */
+    /* The whole body for the calculator */
+    #cal-body{
+        background:rgb(130, 28, 177);
+        color:white;
+        width:11.3rem;
+        height:22rem;
+        margin-top:2rem;
+        padding: 1rem 0rem;
+        border-radius:20px;
+        margin-bottom:2rem;
+        box-shadow:0 0 13px white;
+    }
+    
+    /* codes for the buttons */
+    input[type="button"]{
+        font-size:13.3px;
+        width:31px;
+        padding:2px;
+        border-radius:10px;
+        color:orange;
+        font-weight:bold;
+    }
+    
+
+    /* the text above the clock */
+    .clock{
+        font-size:15px;
+    }
+    
+    /* arrange the clock on the calculator */
+    #clock{
+    
+        font-size:17px;
+        font-weight:bold;
+        color:white;
+    
+    
+    
+    }
+    
+    
+    
+    
+    /* codes to arrange the power buttons correctly */
+    #first{
+    margin-left:4.4rem;
+    }
+    
+    #second{
+        margin-left:0rem;
+    }
+    
+    
+    /* codes for the display area in the calculator */
+    #display{
+    height:1.4rem;
+    width:7rem;
+    box-shadow:0 0 14px white;
+    border-radius:8px;
+    text-align:right;
+    font-size:26px;
+    padding:0.3rem 1.2rem;
+    }
+    
+
+
+
+    /*  THE ENTIRE CONTACT FORM */
+/* styling for the words on top of the contact form */
+/* displaying the contact form and image with address in flex */
+.f-holder{
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom:4rem;
+    flex-direction:column;
+
+}
+
+/* the boxes displayed in flex */
+.f-holder .f-contents{
+    margin-bottom:4rem;
+}
+
+
+/* the two boxes displayed in flex now turned to column */
+
+
+
+/* horizontal line under the words on top of the contact form */
+.top-words{
+font-size:19px;
+width:100%;
+
+}
+hr{
+    display:none;   
+}
+
+/* image on the Contact Form */
+center .c-image{
+    width:12rem;
+    height:16rem;
+    border-radius:13px;
+}
+
+
+/* list below the image in the contact page */
+ul{
+    list-style-type:none;
+    font-size:23px;
+}
+
+/* the body of the form */
+.c-form{
+    height:auto;
+    width:19rem;
+    padding:10px 0px;
+    margin-bottom:4rem;;
+    border-radius:16px;
+    border-top:6px solid cyan;
+    border-bottom:6px solid cyan;
+background-color:rgb(197, 89, 27);
+}
+
+/* hover effect for the form */
+.c-form:hover{
+    transition:all 0.4s ease-in;
+    background-color:rgb(54, 59, 78);
+    color:white;
+    border-radius:18px;
+    box-shadow:0 0 17px rgb(133, 86, 111);
+    border-top:6px solid pink;
+    border-bottom:6px solid pink;
+}
+
+/* stylings for all the h3s in the form */
+.all-h3s{
+    margin:4px;
+}
+
+
+/* The first in the form */
+form .f-header{
+    margin-top:25px;
+}
+
+
+
+/* Stylings for the text ares in the contact form */
+.text-areas{
+    height:42px;
+    width:250px;
+    font-size:16px;
+    padding:10px 5px;
+    text-align:center;
+    border-radius:12px;
+}
+
+/* The Select area */
+select{
+    height:42px;
+    width:250px;
+}
+
+
+/* The area to write messages */
+.messages{
+    height:220px;
+    width:270px;
+    border-radius:15px;
+    font-size:14px;
+    font-weight:bold;
+    padding:2px;
+    text-align:center;
+}
+
+
+.informations{
+    background:tomato;
+    color:white;
+    width: auto;
+    padding: 4px;
+    border-radius:18px;
+    box-shadow:0 0 14px orangered;
+
+}
+
+/* Stylings for the heading text and the paragraph in the Index page */
+.informations h1, .informations p{
+    color:white;
+}
+
+.informations p{
+    font-size:18px;
+}
+
+
+/* the random quotes in the gallery page */
+#quotes{
+    height:auto;
+    width:12rem;
+    box-shadow: 0 0 16px black;
+    background-color:rgb(255, 255, 255); 
+    color:rgb(104, 65, 65);
+    text-align:center;
+    padding:1rem;
+    text-align:center;
+    border-radius:20px;
+    margin-bottom:0.6rem;
+    overflow:hidden;
+    
+    
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for Mobiles like tablets */
+@media screen and (min-width:400px) and (max-width:600px){
+   /* the last two images in the about page */
+    .last-images{
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction:column;
+    }
+/* for Sam's image in the about page */
+    .sam{
+        margin-top:-5rem;
+        margin-left:1.5rem;
+        margin-bottom:4rem;
+    }
+    
+
+
+
+/* THE VIDEO PLAYER */
+    /* this beautifies the buttons that control the video player */
+    .v-buttons{
+        padding:1px;
+        font-size:14px;
+        font-weight:bold;
+        border-radius:20px;
+        font-family:'Courier New', Courier, monospace;
+        transition:all 2s ease;
+        }
+        
+        /* the code to remove lines from around the video */
+        #myVideo{
+        outline:none;
+        width:320px;
+        height:auto;
+        }
+
+
+
+
+
+
+
+
+
+    /* testimonials section */
+.web-info h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+
+/* displaying the set of images in columns */
+.test-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+
+}
+
+/* resizing the images */
+.imgs{
+width:11rem;
+height:11rem;
+margin:auto;
+border-radius:15px;
+opacity: 0.6;
+}
+
+
+
+/* Hover Effect for the image */
+         
+         .imgs:hover{
+            transition:all 0.2s ease-in;
+             box-shadow: 0 0 11px cyan;
+             opacity: 1;
+         }
+
+
+
+/* the last image */
+ #set-bottom{
+    width:10rem;
+    height:11rem;
+    margin:auto;
+    border-radius:10px;
+    }
+
+
+/* setting the text below the last image */
+    h3.l-margin{
+        font-size:19.89px;
+    }
+    /* WORKS FOR THE SHOWCASE ON SMALLER DEVICES */
+
+
+
+
+   
+    
+    
+
+
+/* text below each of the testimonies */
+figure figcaption{
+    text-align:center;
+    height:auto;
+    margin:0.5rem 10rem 6rem;
+    font-size: 17px;
+
+}
+
+
+/* WORKS FOR THE SHOWCASES */
+
+
+
+
+
+
+/* container that holds the h2 in for advertisment for the products */
+.b-head{
+
+margin-top:4rem;
+
+}
+
+/* The h2 with in the container */
+.b-head h2{
+    font-size:18px;
+    width:auto;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+
+}
+
+
+/* THE FOOTER SECTION */
+.footer-container{
+    display:flex;
+    flex-direction: column-reverse;
+    padding:10px 0px;
+    background:rgba(143, 121, 139, 0.815);
+    justify-content: space-evenly;
+}
+
+
+/* codes for the boxes in the footer */
+.footer-container .f-boxes{
+    margin:auto;
+    margin-bottom:3rem;
+    width:17rem;
+    height:26rem;
+    padding:0 30px;
+    color:white;
+    font-weight:bold;
+    box-shadow:0 1px 10px cyan;
+    background:#f3d;
+}
+
+/* Codes to arrange all elements in the Link's box */
+.footer-container .f-boxes img{
+    width:40px;
+    height:40px;
+    border-radius:60px;
+}
+
+
+
+
+    .logo-area{
+        margin-top:-10px;
+        }
+
+        #logo-web{
+            width:40px;
+            height:40px;
+        }
+
+        .logo-area span{
+            font-size:20px;
+        }
+
+
+    .navbar .links{
+        display:block;
+        float:left;
+        text-transform:uppercase;
+        font-size:13px;
+        color:white;
+        text-decoration:none;
+        padding:6px 8px;
+        font-weight:bold;
+        border-radius:50%;
+    }
+
+    .navbar .links:nth-child(1){
+        margin-left:0.8rem;
+    }
+
+    .banner h1{
+        font-size:20px;
+        font-family:lucida;
+        font-weight:solid thick bold;
+      }
+
+
+      .box-container{
+      margin:2rem;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      justify-content: space-evenly;
+      }
+
+      .box{
+          width:17rem;
+          background-color:white;
+          margin:auto;
+          margin-bottom:2rem;
+          text-align:center;
+      }
+
+      .b-head h2{
+        text-align:center;
+        padding:12px;
+        background:rgba(226, 128, 37, 0.897);
+      }
+
+      .b-body{
+          overflow:hidden;
+          position:relative;
+      }
+
+      .b-body img{
+          width:17rem;
+          height:16rem;
+      }
+
+      .b-end button{
+        margin-left:auto;
+    }
+
+
+     /* testimonials section */
+     .web-info h2{
+        text-align:center;
+  }
+
+
+
+.footer-container{
+    display:flex;
+    border-radius:98px;
+background-color:rgb(117, 69, 69);
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+/* changing styles for the boxes in the footer */
+.f-boxes{
+    border-radius:14px;
+    background:aqua;
+}
+
+
+/*  THE ENTIRE CONTACT FORM */
+/* styling for the words on top of the contact form */
+/* displaying the contact form and image with address in flex */
+.f-holder{
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom:4rem;
+    flex-direction:column;
+
+}
+
+/* the boxes displayed in flex */
+.f-holder .f-contents{
+    margin-bottom:4rem;
+}
+
+
+/* the two boxes displayed in flex now turned to column */
+
+
+
+/* horizontal line under the words on top of the contact form */
+.top-words{
+width:300px;
+}
+
+/* image on the Contact Form */
+center .c-image{
+    width:18rem;
+    height:16rem;
+    border-radius:13px;
+}
+
+
+/* list below the image in the contact page */
+ul{
+    list-style-type:none;
+    font-size:23px;
+}
+
+/* the body of the form */
+.c-form{
+    height:auto;
+    width:24rem;
+    padding:10px 0px;
+    margin-bottom:4rem;;
+    border-radius:16px;
+    box-shadow:0 0 17px black;
+    border-top:6px solid cyan;
+    border-bottom:6px solid cyan;
+background-color:rgb(197, 89, 27);
+}
+
+/* hover effect for the form */
+.c-form:hover{
+    transition:all 0.4s ease-in;
+    background-color:rgb(54, 59, 78);
+    color:white;
+    border-radius:18px;
+    box-shadow:0 0 17px rgb(133, 86, 111);
+    border-top:6px solid pink;
+    border-bottom:6px solid pink;
+}
+
+/* stylings for all the h3s in the form */
+.all-h3s{
+    margin:4px;
+}
+
+
+/* The first in the form */
+form .f-header{
+    margin-top:25px;
+}
+
+
+
+/* Stylings for the text ares in the contact form */
+.text-areas{
+    height:42px;
+    width:300px;
+    font-size:16px;
+    padding:10px 5px;
+    text-align:center;
+    border-radius:12px;
+}
+
+/* The Select area */
+select{
+    height:28px;
+    width:200px;
+}
+
+
+/* The area to write messages */
+.messages{
+    height:120px;
+    width:400px;
+    border-radius:15px;
+    font-size:14px;
+    font-weight:bold;
+    padding:6px;
+    text-align:center;
+}
+
+
+
+
+
+
+/* CODES FOR THE PAYMENT AND CALCULATOR SECTION IN THE PRODUCT PAGE */
+/* stylings  */
+.p-cal{
+    margin-top:2rem;
+    justify-content: space-evenly;
+    display:flex;
+    overflow:hidden;
+    flex-direction:column;
+}
+
+
+
+/* The Purchase form to buy products */
+#products{
+background-color:orangered;
+width:18rem;
+height:auto;
+padding:2rem;
+border-radius:22px;
+margin-top:2rem;
+}
+
+/* the h1 in the payment form */
+#products h1{
+    font-size:29px;
+}
+
+/* the various areas to fill in the form for payment */
+.pay-areas{
+    height:23px;
+    border-radius:6px;
+    width:17rem;
+}
+
+
+
+/* /* Stylings for the calculator in the PRODUCT PAGE */
+/* The whole body for the calculator */
+#cal-body{
+    background:rgb(130, 28, 177);
+    color:white;
+    width:18rem;
+    height:28rem;
+    margin-top:2rem;
+    padding: 1rem 0rem;
+    border-radius:20px;
+    margin-bottom:2rem;
+    box-shadow:0 0 13px white;
+}
+
+/* codes for the buttons */
+input[type="button"]{
+    font-size:20px;
+    width:50px;
+    padding:4px;
+    border-radius:10px;
+    color:orange;
+    font-weight:bold;
+}
+
+
+
+/* arrange the clock on the calculator */
+#clock{
+
+    font-size:23px;
+    font-weight:bold;
+    color:white;
+
+
+
+}
+
+/* hover effect for the calculator */
+#cal-body:hover{
+    background: linear-gradient(90deg, orange, indigo,blue);
+    transition:all 2s ease-in;
+    opacity:0.8;
+
+}
+
+
+
+/* codes to arrange the power buttons correctly */
+#first{
+margin-left:6.7rem;
+}
+
+#second{
+    margin-left:0rem;
+}
+
+
+/* codes for the display area in the calculator */
+#display{
+height:1.8rem;
+width:12rem;
+box-shadow:0 0 14px white;
+border-radius:8px;
+text-align:right;
+font-size:26px;
+padding:0.3rem 1.2rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:601px) and (max-width:900px){
+ /* the last two images in the about page */
+ .last-images{
+    display:flex;
+    justify-content:space-evenly;
+    
+}
+
+
+/* Styling for sam's image in the about page */
+.sam{
+    margin-top:-10rem;
+    margin-left:1.5rem;
+    margin-bottom:4rem;
+}
+
+
+
+
+
+
+/* THE VIDEO PLAYER */
+    /* this beautifies the buttons that control the video player */
+    .v-buttons{
+        padding:4px;
+        font-size:14px;
+        font-weight:bold;
+        font-family:'Courier New', Courier, monospace;
+        transition:all 2s ease;
+        }
+        
+        /* the code to remove lines from around the video */
+        #myVideo{
+        outline:none;
+        width:500px;
+        height:auto;
+        }
+
+
+
+
+
+/* testimonials section */
+/* displaying the second set of images in rows */
+.test-container{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+/* resizing the images */
+.imgs{
+width:10rem;
+height:10rem;
+border-radius:10px;
+opacity: 0.5;
+}
+
+
+/* Hover Effect for the image */
+         
+.imgs:hover{
+    transition:all 0.2s ease-in;
+     box-shadow: 0 0 11px cyan;
+    opacity: 1;
+ 
+ }
+
+
+/* text below each of the testimonies */
+figure figcaption{
+    text-align:center;
+    height:15rem;
+    font-size:16px;
+    margin:5rem;
+    margin:0.5rem 2.5rem 0rem;
+}
+
+/* name below the last team's member image */
+h3.l-margin{
+    font-size:19px;
+}
+
+/* Codes for the Logo styling for media  */
+    .logo-area{
+        margin-top:-10px;
+        }
+
+        #logo-web{
+            width:115px;
+            height:115px;
+        }
+
+        .logo-area span{
+            font-size:33px;
+        }
+
+
+
+/* the banner Section styles */
+    .banner h1{
+        font-size:40px;
+        font-weight:bold;
+        font-family:lucida;
+        text-align:center;
+        margin:10px;
+        animation:websitename 10s;
+      }
+
+      /* Animation for the Webpage Title */
+      @keyframes websitename{
+
+              from{
+              color:yellow;
+              opacity:0.9;
+              font-size:2px;
+              margin-bottom:2px;
+            }
+
+
+          to{
+              font-size:40px;
+            color:red;
+            margin-top:16px;
+            opacity:0.7;
+            transition:all 1s ease;
+            text-shadow:2px 2px black;
+          }
+
+
+
+
+    }
+
+     /* Products Advertisement */
+      .box-container{
+      overflow:hidden;
+      display:flex;
+      margin:20px;
+      justify-content: space-evenly;
+      }
+
+      .box{
+          width:10rem;
+          padding:1rem;
+          height:16rem;
+          margin:0.5rem;
+          text-align:center;
+          border-bottom-right-radius: 10%;
+          border-bottom-left-radius: 10%;
+
+      }
+
+      .b-body{
+          overflow:hidden;
+          position:relative;
+          width:auto;
+          margin:3px;
+      }
+
+      /* the names of the showcases in the page */
+      .b-head h2{
+          font-size:18px;
+          width:auto;
+          text-align:center;
+          background-color:white;
+      }
+
+      .b-body img{
+          width:10rem;
+          height:12rem;
+      }
+
+      .b-end button{
+          margin:auto;
+      }
+
+      /* testimonials section */
+      .web-info h2{
+            text-align:center;
+      }
+
+
+
+/*  THE ENTIRE CONTACT FORM */
+/* styling for the words on top of the contact form */
+/* displaying the contact form and image with address in flex */
+.f-holder{
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom:4rem;
+}
+
+
+
+
+
+/* horizontal line under the words on top of the contact form */
+.top-worsds .hr{
+width:300px;
+}
+
+/* image on the Contact Form */
+center .c-image{
+    width:16rem;
+    height:16rem;
+    border-radius:10px;
+}
+
+
+/* list below the image in the contact page */
+ul{
+    font-size:23px;
+    list-style-type:none;
+}
+
+/* the body of the form */
+.c-form{
+    height:auto;
+    width:18rem;
+    padding:10px 0px;
+    margin:8px;
+    border-radius:16px;
+    box-shadow:0 0 17px black;
+    border-top:6px solid cyan;
+    border-bottom:6px solid cyan;
+background-color:rgb(124, 155, 124);
+}
+
+/* hover effect for the form */
+.c-form:hover{
+    transition:all 0.4s ease-in;
+    background-color:rgb(54, 59, 78);
+    color:white;
+    border-radius:18px;
+    box-shadow:0 0 17px deeppink;
+    border-top:6px solid pink;
+    border-bottom:6px solid pink;
+}
+
+/* stylings for all the h3s in the form */
+.all-h3s{
+    margin:4px;
+}
+
+
+/* The first in the form */
+form .f-header{
+    margin-top:25px;
+}
+
+
+
+/* Stylings for the text ares in the contact form */
+.text-areas{
+    height:22px;
+    width:200px;
+    font-size:16px;
+    padding:10px 5px;
+    text-align:center;
+    border-radius:12px;
+}
+
+/* The Select area */
+select{
+    height:28px;
+    width:200px;
+}
+
+
+/* The area to write messages */
+.messages{
+    height:120px;
+    width:200px;
+    border-radius:15px;
+    font-size:13px;
+    font-weight:bold;
+    padding:6px;
+    text-align:center;
+}
+
+
+/* setting the margin to fit with the top images in tablet mode */
+#set-bottom{
+margin-top:-10rem;
+width:10rem;
+margin-left:-1rem;
+}
+
+
+
+      /* Footer Styles */
+      .footer-container{
+        display:flex;
+    border-radius:28px;
+    margin-bottom:2rem;
+    border-radius:18px;
+        background:rgba(204, 192, 202, 0.959);
+        justify-content: space-evenly;
+    }
+
+
+
+    /* codes for the boxes in the footer */
+.footer-container .f-boxes{
+    margin:1rem;
+    width:15rem;
+    border-radius:28px;
+    height:auto;
+    color:white;
+    font-weight:bold;
+    box-shadow:0 1px 10px cyan;
+    background:rgb(128, 85, 120);
+}
+
+/* Codes to arrange all elements in the Link's box */
+.footer-container .f-boxes img{
+    width:35px;
+    height:35px;
+    border-radius:60px;
+}
+
+
+
+
+
+
+
+
+/* CODES FOR THE PAYMENT AND CALCULATOR SECTION IN THE PRODUCT PAGE */
+/* stylings  */
+.p-cal{
+    margin-top:2rem;
+    justify-content: space-evenly;
+    display:flex;
+
+
+
+}
+
+
+
+/* The Purchase form to buy products */
+#products{
+background-color:orangered;
+width:13rem;
+height:26.4rem;
+padding:2rem;
+border-radius:22px;
+margin-top:2rem;
+margin-bottom:2rem;
+}
+
+/* the h1 in the payment form */
+#products h1{
+    font-size:29px;
+}
+
+/* the various areas to fill in the form for payment */
+.pay-areas{
+    height:27px;
+    border-radius:6px;
+    width:13rem;
+}
+
+
+
+/* /* Stylings for the calculator in the PRODUCT PAGE */
+/* The whole body for the calculator */
+#cal-body{
+    background:rgb(130, 28, 177);
+    color:white;
+    width:16rem;
+    height:28rem;
+    margin-top:2rem;
+    padding: 1rem 0rem;
+    border-radius:20px;
+    margin-bottom:2rem;
+    box-shadow:0 0 13px white;
+}
+
+/* codes for the buttons */
+input[type="button"]{
+    font-size:20px;
+    width:40px;
+    padding:5px;
+    border-radius:10px;
+    color:orange;
+    font-weight:bold;
+}
+
+
+input[type="button"]:hover{
+   background-color:goldenrod;
+   color:white;
+   transition:all 0.8s ease;
+}
+
+
+/* the setting for the buttons on tablest */
+#first{
+    margin-left:5.7rem;
+    }
+
+    #second{
+        margin-left:0rem;
+    }
+
+/* arrange the clock on the calculator */
+#clock{
+
+    font-size:23px;
+    font-weight:bold;
+    color:white;
+
+
+}
+
+/* hover effect for the calculator */
+#cal-body:hover{
+    background: linear-gradient(115deg,black, transparent, brown);
+    transition:all 2s ease-in;
+    opacity:0.8;
+
+}
+
+
+
+/* codes for the display area in the calculator */
+#display{
+height:1.8rem;
+width:9rem;
+box-shadow:0 0 14px white;
+border-radius:8px;
+text-align:right;
+font-size:26px;
+padding:0.3rem 1.2rem;
+}
+
+
+}
+
+
+
+
+
+/* Background with the about information of our Website */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
