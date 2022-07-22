@@ -461,7 +461,7 @@ footer .footer-boxes{
 
 
 /* media query for x-small devices */
-@media screen and (min-width:320px) and (max-width:399px){
+@media screen and (min-width:240px) and (max-width:399px){
 
 /* all links style */
 a{
